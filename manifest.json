@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Flowiki",
+  "version": "1.0",
+  "description": "使用 Notion 风格编写 Wiki",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://info.bilibili.co/*"
+      ],
+      "js": [
+        "content_scripts/const.js",
+        "content_scripts/flowbar.js",
+        "content_scripts/flowbox.js",
+        "content_scripts/main.js",
+        "content_scripts/presentation.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/images/*"
+      ],
+      "matches": [
+        "https://info.bilibili.co/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "/images/logo.png",
+    "48": "/images/logo.png",
+    "128": "/images/logo.png"
+  },
+  "externally_connectable": {
+    "matches": [
+      "https://info.bilibili.co/*"
+    ]
+  }
+}
