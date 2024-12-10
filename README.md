@@ -4,6 +4,8 @@ flowiki = flow + wiki
 
 ## 介绍
 
+如果你的公司正在使用旧版的 Atlassian Confluence，也许你应该试一试这个插件，它可以让 Confluence 拥有有 notion 相似的文档编辑体验
+
 - 在编辑页内输入 「/」来唤出新的工具栏，而不需要将鼠标移动到页面最上面进行操作
 - 划词后弹出工具栏
 
